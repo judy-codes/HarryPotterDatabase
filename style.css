@@ -1,0 +1,206 @@
+/* CSS file for the entire website, the font and pictures is from this article https://medium.com/frontendshortcut/make-hogwarts-admission-form-in-html-and-css-1cdc21165997 
+    main points --> when hovering over the datatable boxes it allows you to see additional information 
+    buttons and data is displayed in the same font etc
+*/
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    color: white;
+    font-family: 'Jolly Lodger';
+    font-size: 26px;
+    letter-spacing: 1px;
+    background-color: black;
+}
+
+p {
+    height: 100%;
+    margin: 0px;
+    color: white;
+    font-family: 'Jolly Lodger';
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    height: 100%;
+    margin: 0px;
+    color: white;
+    font-family: 'Jolly Lodger';
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+button {
+    color: black;
+    font-family: 'Jolly Lodger';
+    font-size: 20px;
+}
+
+#hogwarts-background {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/hogwarts.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+#form-wrapper {
+    width: 90%;
+    max-width: 500px;
+    min-height: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#form-wrapper>form {
+    color: white;
+    padding: 40px;
+    font-family: 'Jolly Lodger';
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+#form-wrapper>form>input,
+select {
+    font-family: 'Jolly Lodger';
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 0px 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    color: #fff;
+}
+
+#form-wrapper>form>input[type="submit"] {
+    width: 160px;
+    display: block;
+    margin: 0px auto;
+    font-size: 26px;
+}
+
+#form-wrapper>input[type="button"] {
+    font-family: 'Jolly Lodger';
+    font-size: 22px;
+    padding: 40px;
+    letter-spacing: 1px;
+    padding: 0px 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    color: #fff;
+}
+
+#text-style {
+    color: white;
+    font-family: 'Jolly Lodger';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+#button-style>input[type="button"] {
+    font-family: 'Jolly Lodger';
+    font-size: 30px;
+    padding: 40px;
+    letter-spacing: 1px;
+    padding: 0px 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+#button-style.left {
+    float: left;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+#button-style.right {
+    float: right;
+    padding-top: 40px;
+    padding-right: 100px;
+}
+
+#button-style.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+table.search_results td:first-child {
+    padding: 0;
+}
+
+table.search_results td:hover {
+    padding: 0;
+    color: blue;
+    border-color: #25505b;
+    background: #b5d6dd;
+    text-decoration: underline;
+}
+
+table.search_results a {
+    position: absolute;
+    display: block;
+    width: 98%;
+}
+
+table.search_results a:hover {
+    background: none;
+}
+
+/* document.querySelector("#gt2 > table > tbody > tr:nth-child(1) > th:nth-child(1) > button") */
+/* table.search_results tr:hover {
+    border-color: #25505b;
+    background: #b5d6dd;
+} */
+#MyTable {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px
+}
+
+#MyTable td {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 3px;
+}
+
+.CellWithComment {
+    position: relative;
+}
+
+.CellComment {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    border: 1px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    padding: 3px;
+    color: red;
+    top: 20px;
+    left: 20px;
+}
+
+.CellWithComment:hover span.CellComment {
+    display: block;
+}
+
+th:hover {
+    cursor: pointer;
+    background: #AAA;
+
+}

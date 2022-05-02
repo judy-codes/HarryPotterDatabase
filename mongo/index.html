@@ -1,0 +1,62 @@
+<!-- HTML for Mongo page
+key things - 
+there is drill down is for every box in the datatable when you hover
+the three queries used is populating the chapter dropdown dynamically, populating the datatable itself with the quotes, and populateing the movie information at the top
+the top buttons on the datatable are used to sort the items-->
+
+<!DOCTYPE html>
+<html>
+<script language="javascript" src="table.js"></script>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Jolly+Lodger" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/../../style.css">
+</head>
+
+<body>
+    <div id="hogwarts-background">
+        <div id="form-wrapper">
+            <h1>Welcome to the Mongo DB
+                Search for Dialogue!</h1>
+            <form id='movie' action="#" onclick="showData()">
+                Select a Movie:
+                <select id="movieSelected" name="movieSelected" onchange="formChapter(this.id,'chapterSelected')">
+                    <option value=""></option>
+                    <option value="Harry Potter and the Philosopher's Stone">Philosopher's Stone</option>
+                    <option value="Harry Potter and the Chamber of Secrets">Chamber of Secrets</option>
+                    <option value="Harry Potter and the Goblet of Fire">Goblet of Fire</option>
+                    <option value="Harry Potter and the Order of the Phoenix">Order of the Phoenix</option>
+                    <option value="Harry Potter and the Half-Blood Prince">Half-Blood Prince</option>
+                    <option value="Harry Potter and the Deathly Hallows Part 1">Deathly Hallows Part 1</option>
+                    <option value="Harry Potter and the Deathly Hallows Part 2">Deathly Hallows Part 2</option>
+                </select>
+                <br></br>
+                Select a Chapter:
+                <select id="chapterSelected" name="chapterSelected"></select>
+                <br></br>
+                <input type="button" value="Submit">
+            </form>
+</body>
+
+</div>
+<div>
+    <h1 id="gt"></h1>
+    <div id="gt2"></div>
+</div>
+
+</div>
+
+</body>
+
+</html>
+<!-- 
+<html>
+
+<body>
+    <br><button onclick="doQuery()" name="query">Fetch Data</button>
+    <div id="gt"></div>
+    <div id="gt2"></div>
+</body>
+<script language="javascript" src="tbler.js"></script>
+
+</html> -->

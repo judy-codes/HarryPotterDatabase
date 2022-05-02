@@ -1,0 +1,57 @@
+<!-- HTML for main page
+key things - 
+the buttons just redirect to the mongo or psql page and the choose me button will randomly choose a DB for you if you're indecisive-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Jolly+Lodger" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="hogwarts-background">
+        <div id="form-wrapper">
+            <h1>
+                <div id="text-style">
+                    Pick a Type of Database!
+                </div>
+            </h1>
+
+            <p id="button-style" class="left">
+                <input type="button" id="mongo" onclick="window.location.href = 'http://165.106.10.170:9999/mongo'"
+                    value="Mongo DB" />
+            </p>
+
+            <p id="button-style" class="right">
+                <input type="button" id="PSQL" onclick="window.location.href = 'http://165.106.10.170:9999/psql'"
+                    value="PSQL" />
+            </p>
+            <br></br>
+
+            <h3 id="text-style">
+                Or
+            </h3>
+
+            <br></br>
+
+            <p id="button-style" class="center">
+                <input type="button" id="PSQL" onclick="choose4me()" value="Choose for me!" />
+
+                <script>
+                    function choose4me() {
+                        var arr = ["http://165.106.10.170:9999/psql", "http://165.106.10.170:9999/mongo"];
+                        var value = arr[Math.floor(Math.random() * arr.length)];
+                        window.location = value;
+                    }
+                </script>
+
+            </p>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
